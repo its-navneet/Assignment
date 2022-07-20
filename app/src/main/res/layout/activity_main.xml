@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/service_title"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online consultation"
+        android:textColor="#007EAA"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/service_description"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:paddingHorizontal="30dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:text="Virtual Consultation has redefined healthcare as an effective way to alleviate the ongoing strain on hospitals battling with the Coronavirus pandemic. We offers a safe digital consultation to patients at the comfort of their homes through a secure whatsapp chat. Click below to directly connect us."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_title" />
+
+    <Button
+        android:id="@+id/serviceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/service_description"
+        app:layout_constraintRight_toRightOf="@id/service_description"
+        app:layout_constraintTop_toBottomOf="@id/service_description"
+        android:onClick="checkServices"
+        android:text="Services" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/serviceButton"
+        app:layout_constraintLeft_toLeftOf="@id/serviceButton"
+        app:layout_constraintRight_toRightOf="@id/serviceButton"
+        android:src="@drawable/doctor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
